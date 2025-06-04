@@ -17,10 +17,10 @@ def camera():
                 camera = PiCamera()
 #                 time.sleep(2)
                 #camera.capture("/home/ananya/Desktop/wastebasket/waste.jpg"
-                camera.capture("/home/ananya/Desktop/wastebasket/img.jpg")
+                camera.capture("path.jpg")
                 print("Done.")
                 camera.close()
-                test_img = cv2.imread("/home/ananya/Desktop/wastebasket/img.jpg")
+                test_img = cv2.imread("/file_path.jpg")
                 #
                 result = predictest.prediction(test_img)
 #                 while GPIO.input(sensor):
